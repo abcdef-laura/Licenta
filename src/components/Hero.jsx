@@ -12,7 +12,6 @@ function Hero() {
   const [loading, setLoading] = useState(true);
 
   function parseLocation(locationStr) {
-    // exemplu: "44.4268,26.1025"
     const [lat, lng] = locationStr.split(",").map(Number);
     return { lat, lng };
   }
@@ -50,7 +49,7 @@ function Hero() {
 
   return (
     <section className="hero-section">
-      <h1 className="hero-title">Ajută-ne să găsim animalele pierdute 🐶</h1>
+      <h1 className="hero-title">Ajută-ne să găsim animalele pierdute</h1>
 
       <div className="hero-button">
         <Link to="/add-pet">+ Adaugă un animal</Link>
@@ -65,7 +64,7 @@ function Hero() {
       </div>
 
 
-      <h2 className="sub-title">Ultimele anunțuri</h2>
+      <h2 className="sub-title">Ultimele anunțuri adăugate</h2>
 
       {loading ? (
         <p>Se încarcă anunțurile...</p>

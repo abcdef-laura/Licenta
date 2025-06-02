@@ -16,6 +16,8 @@ import SignUp from "./pages/SignUp";
 import Dashboard from './pages/Dashboard';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import MyPets from './pages/Mypets';
+import EditPet from './pages/EditPet';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -36,6 +38,9 @@ useEffect(() => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/my-pets" element={<MyPets />} />
+        <Route path="/edit-pet/:id" element={<EditPet />} />
+
 
         <Route
           path="/add-pet"

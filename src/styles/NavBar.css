@@ -1,7 +1,7 @@
 /* Navbar layout */
 
 .navbar {
-    background-color: #FB9B2C;
+    background-color: #BBA3B2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,11 +42,11 @@
   }
   
   .nav-link:hover {
-    color: #F67B14;
+    color: #BBA3B2;
   }
   
   .signup-button {
-    background-color: #F67B14;
+    background-color: #BBA3B2;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -56,7 +56,7 @@
   }
   
   .signup-button:hover {
-    background-color: #f17108;
+    background-color: #BBA3B2;
   }
   
   /* Responsive: pentru mobil */
@@ -69,7 +69,7 @@
       display: none;
       flex-direction: column;
       align-items: flex-start;
-      background-color: #F67B14;
+      background-color: #BBA3B2;
       position: absolute;
       top: 100%;
       right: 0;
