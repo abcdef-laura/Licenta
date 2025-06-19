@@ -1,4 +1,3 @@
-// src/pages/Adopta.jsx
 import React from 'react';
 
 export default function AdoptaADog() {

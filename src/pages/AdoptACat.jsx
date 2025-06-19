@@ -1,4 +1,3 @@
-// src/pages/Adauga.jsx
 import React from 'react';
 
 export default function AdoptaCat() {

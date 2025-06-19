@@ -1,4 +1,3 @@
-// src/pages/EditPet.jsx
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getDoc, doc, updateDoc } from "firebase/firestore";

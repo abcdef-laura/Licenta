@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from "react";
 import Hero from "../components/Hero";
 
@@ -10,7 +9,7 @@ export default function Home() {
       <Hero />
     </>
       <h1 className="text-4xl font-bold text-blue-600 mb-4">
-        Bine ai venit la FindMyPet! 🐾
+        FindMyPet
       </h1>
     </div>
     

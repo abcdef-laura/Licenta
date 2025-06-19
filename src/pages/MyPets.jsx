@@ -1,10 +1,11 @@
-// src/pages/MyPets.jsx
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, db } from "../firebase";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import AnimalCard from "../components/AnimalCard";
+import "../styles/MyPets.css";
 
 function MyPets() {
   const [user] = useAuthState(auth);
@@ -33,9 +34,12 @@ function MyPets() {
       {pets.length === 0 ? (
         <p>Nu ai adăugat niciun animal.</p>
       ) : (
-        pets.map((pet) => (
-          <AnimalCard key={pet.id} {...pet} editable />
-        ))
+        <div className="animal-list">
+            {pets.map((pet) => (
+          <AnimalCard key={pet.id} image={pet.imageUrl} {...pet} editable />
+          
+        ))}
+        </div>
       )}
     </div>
   );

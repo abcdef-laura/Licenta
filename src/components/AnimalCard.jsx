@@ -5,7 +5,7 @@ import { doc, deleteDoc } from "firebase/firestore";
 import { useNavigate } from 'react-router-dom';
 
 
-function AnimalCard({ id, name, type, location, image, description, editable = false }) {
+function AnimalCard({ id, name, type, location, image, description,phoneNumber, editable = false }) {
     const navigate = useNavigate();
 
     const handleDelete = async () => {
@@ -32,6 +32,10 @@ function AnimalCard({ id, name, type, location, image, description, editable = f
       <div className="animal-info">
         <h3>{name} ({type})</h3>
         <p><strong>Locație:</strong> {location}</p>
+
+        {phoneNumber && (
+        <p><strong>Telefon:</strong> {phoneNumber}</p>
+        )}
 
         {description && (
           <p className="animal-description">{description}</p>

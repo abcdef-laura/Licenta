@@ -1,5 +1,5 @@
 .add-pet-container {
-    max-width: 500px;
+    max-width: 100%;
     margin: 3rem auto;
     padding: 2rem;
     background-color: #ffffff;
@@ -11,6 +11,13 @@
     text-align: center;
     margin-bottom: 1.5rem;
     color: #333;
+  }
+  
+  .map-container-wrapper {
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   }
   
   .add-pet-form {
@@ -33,7 +40,7 @@
   }
   
   .add-pet-form button {
-    background-color: #007bff;
+    background-color: #ff00ddb1;
     color: white;
     padding: 0.75rem;
     border: none;
@@ -45,5 +52,13 @@
   
   .add-pet-form button:hover {
     background-color: #0056b3;
+  }
+  .map-top-container {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   }
   

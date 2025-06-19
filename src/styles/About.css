@@ -1,16 +1,56 @@
 .about-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background-color: #fef9f6;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
   
-  .about-container h1, .about-container h2 {
-    color: #333;
+  .about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #8c52ff;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #cf94f4;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #444;
   }
   
   .about-container ul {
-    padding-left: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-container ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    padding-left: 1.4rem;
+    position: relative;
+  }
+  
+  .about-container ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  
+  .about-container strong {
+    color: #8c52ff;
   }
   

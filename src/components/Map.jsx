@@ -26,7 +26,7 @@ function Map({ markers = [], selectedPet, onMarkerClick }) {
     <GoogleMap
       mapContainerStyle={{ width: "100%", height: "400px" }}
       center={selectedPet?.position || { lat: 44.4268, lng: 26.1025 }}
-      zoom={11}
+      zoom={6}
       onLoad={(map) => (mapRef.current = map)}
     >
       {markers.map((pet, idx) => (
@@ -37,7 +37,7 @@ function Map({ markers = [], selectedPet, onMarkerClick }) {
         />
       ))}
 
-      {selectedPet && (
+      {/* {selectedPet && (
         <InfoWindow
           position={selectedPet.position}
           onCloseClick={() => onMarkerClick(null)}
@@ -50,7 +50,22 @@ function Map({ markers = [], selectedPet, onMarkerClick }) {
             )}
           </div>
         </InfoWindow>
+      )} */}
+      {selectedPet?.position && (
+  <InfoWindow
+    position={selectedPet.position}
+    onCloseClick={() => onMarkerClick(null)}
+  >
+    <div style={{ maxWidth: "200px" }}>
+      <h4>{selectedPet.name}</h4>
+      <p>{selectedPet.type} - {selectedPet.animalStatus}</p>
+      {selectedPet.imageUrl && (
+        <img src={selectedPet.imageUrl} alt={selectedPet.name} style={{ width: "100%" }} />
       )}
+    </div>
+  </InfoWindow>
+)}
+
     </GoogleMap>
   );
 }

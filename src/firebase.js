@@ -22,9 +22,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const auth = getAuth(app); // adăugat
-const db = getFirestore(app); // optional, dacă vei folosi baza de date
-const storage = getStorage(app); // optional, dacă vei urca imagini
+const auth = getAuth(app);
+const db = getFirestore(app); 
+const storage = getStorage(app);
 
-// Exportă ce ai nevoie
 export { auth, db, storage };

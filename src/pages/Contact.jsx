@@ -26,7 +26,7 @@ function Contact() {
     emailjs
       .send(
         "service_x2tncca",
-        "template_tig2g2u",    // Înlocuiește
+        "template_tig2g2u",
         formData,
         "YIq1yN6vOipxS3Qki"
       )
